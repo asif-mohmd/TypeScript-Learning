@@ -1,3 +1,6 @@
+
+// More preferable way is Type than interface
+
 type UserData1 = {
     name:string;
     age : number
@@ -19,12 +22,12 @@ let adminDetail1 : AdminData1 = {
     role : "admin"
 }
 
-function getDatas<T>(details:T):T{
+function getDatas1<T>(details:T):T{
     return details
 }
 
-let newUser1 = getDatas<UserData>(userDetail)
-let newAdmin1 = getDatas<AdminData>(adminDetail)
+let newUser1 = getDatas1<UserData>(userDetail)
+let newAdmin1 = getDatas1<AdminData>(adminDetail)
 
 newUser.age
 newAdmin.role
